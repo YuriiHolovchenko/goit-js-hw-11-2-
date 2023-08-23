@@ -1,0 +1,10 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--indent);
+}
+
+.grid__item {
+    flex-basis: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items)); 
+}
